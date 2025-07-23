@@ -38,6 +38,13 @@ and generate a refactored version following SOLID principles.
 Use get-context to: Scan all API endpoints in our microservices, understand their functionality,
 and create comprehensive OpenAPI documentation with examples.
 """
+
+# Example 4: Granular search per repositories 
+"""
+Use open-aware to: Scan all API endpoints in our microservices, understand their functionality,
+and create comprehensive OpenAPI documentation with examples.
+repositories = ["...", "..."]
+"""
 ```
 
 ## 🔨 Available Tools
