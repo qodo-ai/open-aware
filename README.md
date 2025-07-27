@@ -7,18 +7,14 @@
 
 | Category | Capability | Your Agent |
 |----------|------------|------------|
-| 🔍 **Search** | Advanced semantic search across repositories | ❌ |
-| 📊 **Analytics** | Real-time code analysis and insights | ❌ |
-| 🤖 **AI Integration** | Intelligent code understanding and suggestions | ❌ |
-| 🔐 **Security** | Built-in security scanning and vulnerability detection | ❌ |
-| 📁 **Repository Management** | Multi-repository support with tag-based organization | ❌ |
-| 🚀 **Performance** | Fast indexing and retrieval of code snippets | ❌ |
-| 🔄 **Sync** | Automatic synchronization with version control systems | ❌ |
-| 📝 **Documentation** | Auto-generated documentation from code | ❌ |
-| 🎯 **Context-Aware** | Smart context retrieval based on queries | ❌ |
-| 🛠️ **Extensible** | Plugin architecture for custom integrations | ❌ |
+| 🔍 **Addvance context** | Advanced context across repositories include documentation and code | ❌ |
+| 🤖 **Agentic** | Agent that searche deep in indexed code and documentation for your query | ❌ |
+| 🛠️ **Aware engine** | You get access via MCP to the same features enterprise customers get | ❌ |
+| 🚀 **Cross repo intelegence** | Ability to query multiple repositories | ❌ |
+| 🎯 **Up to date** | We index daily all changes from the latest version for each repo | ❌ |
 
-### 🤖 LLM Agent Integration
+
+### 🤖 Prompts
 
 ```python
 # Example 1: Let the model use aware tools based on resoning 
@@ -115,7 +111,7 @@ Both tools are exposed through the Model Context Protocol (MCP), making them eas
 
 **Remember**: This tool is designed to assist in code discovery and analysis. Professional judgment, thorough testing, and security reviews are essential before using any code in production systems.
 
-## 🤝 Connect with Us
+## :outbox_tray: Connect with Us
 
 Join our community to get support, share feedback, and stay updated with the latest features!
 
