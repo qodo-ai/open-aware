@@ -5,13 +5,13 @@
 
 ## Features
 
-| Category | Capability | Your Agent |
+| Category | Open Aware | Your Agent |
 |----------|------------|------------|
-| 🔍 **Addvance context** | Advanced context across repositories include documentation and code | ❌ |
-| 🤖 **Agentic** | Agent that searche deep in indexed code and documentation for your query | ❌ |
-| 🛠️ **Aware engine** | You get access via MCP to the same features enterprise customers get | ❌ |
-| 🚀 **Cross repo intelegence** | Ability to query multiple repositories | ❌ |
-| 🎯 **Up to date** | We index daily all changes from the latest version for each repo | ❌ |
+| 🔍 **Addvance context** | ✅ Advanced context across repositories include documentation and code | ❌ |
+| 🤖 **Agentic** | ✅ Agent that searche deep in indexed code and documentation for your query | ❌ |
+| 🛠️ **Aware engine** | ✅ You get access via MCP to the same features enterprise customers get | ❌ |
+| 🚀 **Cross repo intelegence** | ✅ Ability to query multiple repositories | ❌ |
+| 🎯 **Up to date** | ✅ We index daily all changes from the latest version for each repo | ❌ |
 
 
 ### 🤖 Prompts
@@ -45,17 +45,16 @@ repositories = ["...", "..."]
 
 ## 🔨 Available Tools
 
-The aware-open MCP server provides two powerful agent tools that can be integrated into your AI workflows:
+The open-aware MCP server provides two powerful tools that can be integrated into your AI workflows:
 
 ### 1. **Context Retrieval Tool** (`get_context`)
-This tool performs semantic search across your codebase to find relevant code snippets and implementations.
+This tool performs semantic search across codebase/s to find relevant code snippets.
 
 **Key Features:**
 - **Semantic Search**: Uses vector embeddings to find conceptually similar code, not just keyword matches
 - **Multi-Repository Support**: Search across multiple repositories simultaneously
 - **Language Filtering**: Filter results by programming language (Python, JavaScript, TypeScript, etc.)
 - **Intelligent Ranking**: Returns results ranked by relevance with configurable result limits
-- **Tag-Based Filtering**: Use repository tags to narrow search scope
 
 **Example Usage:**
 ```json
@@ -70,8 +69,8 @@ This tool performs semantic search across your codebase to find relevant code sn
 }
 ```
 
-### 2. **Deep Ask Tool** (`deep_ask`)
-An intelligent Q&A agent that can answer complex questions about your codebase by analyzing code structure, patterns, and relationships.
+### 2. **Deep Research Tool** (`deep_research`)
+An deep context agent that can answer / plan / research complex queries about a codebase\s by analyzing code structure, patterns, and relationships.
 
 **Key Features:**
 - **Code Understanding**: Comprehends code logic, architecture, and design patterns
@@ -83,7 +82,7 @@ An intelligent Q&A agent that can answer complex questions about your codebase b
 **Example Usage:**
 ```json
 {
-  "tool": "deep_ask",
+  "tool": "deep_research",
   "parameters": {
     "input": "How does the authentication flow work across our microservices? What security measures are in place?",
     "repositories": ["auth-service", "api-gateway", "user-service"],
@@ -93,11 +92,18 @@ An intelligent Q&A agent that can answer complex questions about your codebase b
 ```
 
 ### Integration with MCP
-Both tools are exposed through the Model Context Protocol (MCP), making them easily accessible to any MCP-compatible AI assistant or development environment. This enables:
-- Seamless integration with AI coding assistants
-- Automated code analysis workflows
-- Context-aware code generation
-- Intelligent refactoring suggestions
+Both tools are exposed through the Model Context Protocol (MCP), making them easily accessible to any MCP-compatible AI assistant or development environment.
+```json
+{
+  "open-aware": {
+    "command": "npx",
+    "args": [
+      "mcp-remote",
+      "https://open-aware.qodo.ai/mcp/"
+    ]
+  }
+}
+```
 
 ## ⚠️ Disclaimer
 
