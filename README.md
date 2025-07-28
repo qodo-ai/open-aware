@@ -15,34 +15,43 @@ Open Aware brings the code intelligence directly to your AI assistant through MC
 | 🚀 **Cross repo intelegence** | ✅ Ability to query multiple repositories | ❌ |
 | 🎯 **Up to date** | ✅ We index daily all changes from the latest version for each repo | ❌ |
 
+## Integration with MCP
+Both tools are exposed through the Model Context Protocol (MCP), making them easily accessible to any MCP-compatible AI assistant or development environment.
+```json
+{
+  "open-aware": {
+    "command": "npx",
+    "args": [
+      "mcp-remote",
+      "https://open-aware.qodo.ai/mcp/"
+    ]
+  }
+}
+```
 
 ### 🤖 Prompts
 
-```python
-# Example 1: Let the model use aware tools based on resoning 
-"""
-Use open-aware to: Find all database connection implementations in our Python repositories 
-and suggest connection pooling improvements for better performance.
-"""
+#### Example 1: Let your agent resoning to select aware tools  
+```text
+Use open-aware to:
+<USER_PROMPT>
+```
 
-# Example 2: Spesificlly use deep-research
-"""
-Use deep-research to: Analyze the user authentication module in /backend/auth, identify code smells,
-and generate a refactored version following SOLID principles.
-"""
+#### Example 2: Spesificlly use deep-research / get-context
+```text
+Use deep-research to:
+<USER_PROMPT>
+```
+```text
+Use get-context to:
+<USER_PROMPT>
+```
 
-# Example 3: Spesificlly use get-context
-"""
-Use get-context to: Scan all API endpoints in our microservices, understand their functionality,
-and create comprehensive OpenAPI documentation with examples.
-"""
-
-# Example 4: Granular search per repositories 
-"""
-Use open-aware to: Scan all API endpoints in our microservices, understand their functionality,
-and create comprehensive OpenAPI documentation with examples.
-repositories = ["...", "..."]
-"""
+#### Example 3: Granular search per repositorie\s 
+```text
+Use open-aware to: 
+<USER_PROMPT>
+repositories = ["<ORG/REPO_NAME>", "<ORG/REPO_NAME>", ...]
 ```
 
 ## 🔨 Available Tools
@@ -87,24 +96,28 @@ An deep context agent that can answer / plan / research complex queries about a 
   "tool": "deep_research",
   "parameters": {
     "input": "How does the authentication flow work across our microservices? What security measures are in place?",
-    "repositories": ["auth-service", "api-gateway", "user-service"],
+    "repositories": ["backend/api", "frontend/app"],
     "session_id": "analysis-123"
   }
 }
 ```
 
-### Integration with MCP
-Both tools are exposed through the Model Context Protocol (MCP), making them easily accessible to any MCP-compatible AI assistant or development environment.
-```json
-{
-  "open-aware": {
-    "command": "npx",
-    "args": [
-      "mcp-remote",
-      "https://open-aware.qodo.ai/mcp/"
-    ]
-  }
-}
+## 🔬 Deep research exsamples
+
+```text
+use open-aware: 
+Investigate repositories ["langchain-ai/langchain", "BerriAI/litellm"]. 
+I don't know witch one to use for LLM API calling create a comparison and help me decide.
+```
+
+Research for implementation and plan - In some cases you migth be missing a feature from a repository and you like to implemnt it your self via PR for the repo / as forked version, here is exsample of feature that is missing today in flask repository, first the agent will try to make sure there is not exsisitng way to use the rewuested feature and then if not he will create a details plan of the files need to be chnage and suggest the modificayion to be added.
+
+This shwcase need to applay research for optimal implementation need where the agent is doing the research and codebase understadning to enable ececute the chnage in a way that will not brake the code and also be alinged with how fetures current features are implemned.
+```text
+use open-aware:
+Investigate repository ["pallets/flask"], is there capability to manage requests queue ?
+If Not i like to submmit a PR for flask repo to suggest adding a queue for requests.,
+therfor investigate and plan how to do it and create .md file plan for me to execute
 ```
 
 ## ⚠️ Disclaimer
