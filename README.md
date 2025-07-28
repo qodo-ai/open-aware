@@ -3,6 +3,8 @@
   <img width="502" height="402" alt="image" src="https://github.com/user-attachments/assets/2b12403d-12eb-4c6c-ae32-e1d9fa30b2e5" />
 </div>
 
+Open Aware brings the code intelligence directly to your AI assistant through MCP. Go beyond keyword search, understand code semantically across multiple repositories with daily updated indexes. 
+
 ## Features
 
 | Category | Open Aware | Your Agent |
