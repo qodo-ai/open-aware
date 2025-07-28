@@ -29,7 +29,7 @@ Both tools are exposed through the Model Context Protocol (MCP), making them eas
 }
 ```
 
-### 🤖 Prompts
+## 🤖 Prompts
 
 #### Example 1: Let your agent resoning to select aware tools  
 ```text
@@ -54,11 +54,14 @@ Use open-aware to:
 repositories = ["<ORG/REPO_NAME>", "<ORG/REPO_NAME>", ...]
 ```
 
-## 🔨 Available Tools
+## 🧰 Available Tools
 
 The open-aware MCP server provides two powerful tools that can be integrated into your AI workflows:
 
-### 1. **Context Retrieval Tool** (`get_context`)
+<details>
+<summary>
+  <b> 🔨 **Context Retrieval** (`get_context`) </b>
+</summary>
 This tool performs semantic search across codebase/s to find relevant code snippets.
 
 **Key Features:**
@@ -79,8 +82,15 @@ This tool performs semantic search across codebase/s to find relevant code snipp
   }
 }
 ```
+</details>
 
-### 2. **Deep Research Tool** (`deep_research`)
+
+
+<details>
+<summary>
+  <b> 🔨 **Deep Research** (`deep_research`) </b>
+</summary>
+  
 An deep context agent that can answer / plan / research complex queries about a codebase\s by analyzing code structure, patterns, and relationships.
 
 **Key Features:**
@@ -101,11 +111,12 @@ An deep context agent that can answer / plan / research complex queries about a 
   }
 }
 ```
+</details>
 
 ## 🔬 Deep research exsamples
 
 ```text
-use open-aware: 
+use deep_research: 
 Investigate repositories ["langchain-ai/langchain", "BerriAI/litellm"]. 
 I don't know witch one to use for LLM API calling create a comparison and help me decide.
 ```
@@ -114,7 +125,7 @@ Research for implementation and plan - In some cases you migth be missing a feat
 
 This shwcase need to applay research for optimal implementation need where the agent is doing the research and codebase understadning to enable ececute the chnage in a way that will not brake the code and also be alinged with how fetures current features are implemned.
 ```text
-use open-aware:
+use deep_research:
 Investigate repository ["pallets/flask"], is there capability to manage requests queue ?
 If Not i like to submmit a PR for flask repo to suggest adding a queue for requests.,
 therfor investigate and plan how to do it and create .md file plan for me to execute
