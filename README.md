@@ -13,7 +13,7 @@ Open Aware brings the code intelligence directly to your AI assistant through MC
 | Category | Open Aware | Your Agent |
 |----------|------------|------------|
 | 🔍 **Addvance context** | ✅ Advanced context across repositories include documentation and code | ❌ |
-| 🤖 **Agentic** | ✅ Agent that searche deep in indexed code and documentation for your query | ❌ |
+| 🤖 **Agentic** | ✅ Agent that searches deep in indexed code and documentation for your query | ❌ |
 | 🛠️ **Aware engine** | ✅ You get access via MCP to the same features enterprise customers get | ❌ |
 | 🚀 **Cross repo intelegence** | ✅ Ability to query multiple repositories | ❌ |
 | 🎯 **Up to date** | ✅ We index daily all changes from the latest version for each repo | ❌ |
