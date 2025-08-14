@@ -118,6 +118,7 @@ An deep context agent that can answer / plan / research complex queries about a 
 
 ## 🔬 Deep research exsamples
 
+Comparison based on code behavior: make a decision based on the implementation of the projects versus reading only the docs.
 ```text
 use deep_research: 
 Investigate repositories ["langchain-ai/langchain", "BerriAI/litellm"]. 
@@ -150,7 +151,7 @@ therfor investigate and plan how to do it and create .md file plan for me to exe
 
 Join our community to get support, share feedback, and stay updated with the latest features!
 
-[![Discord](https://img.shields.io/badge/Discord-Join%20Our%20Server-7289da?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/your-invite-link)
+[![Discord](https://img.shields.io/badge/Discord-Join%20Our%20Server-7289da?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/1057273017547378788/1404804854265675867)
 
 - 💬 **Get Help**: Ask questions and get support from our community
 - 🐛 **Report Issues**: Share bugs and help us improve
