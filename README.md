@@ -116,7 +116,7 @@ An deep context agent that can answer / plan / research complex queries about a 
 ```
 </details>
 
-## 🔬 Deep research exsamples
+## 🔬 Exsamples
 
 Comparison based on code behavior: make a decision based on the implementation of the projects versus reading only the docs.
 ```text
@@ -134,6 +134,12 @@ Investigate repository ["pallets/flask"], is there capability to manage requests
 If Not i like to submmit a PR for flask repo to suggest adding a queue for requests.,
 therfor investigate and plan how to do it and create .md file plan for me to execute
 ```
+
+## 🏗️ Architecture 
+
+<div align="center">
+<img width="720" height="1400" alt="image" src="https://github.com/user-attachments/assets/ff22a244-903a-49be-91e2-d5af97c31f2f" />
+</div>
 
 ## ⚠️ Disclaimer
 
