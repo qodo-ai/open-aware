@@ -57,7 +57,7 @@ Use open-aware to:
 repositories = ["<ORG/REPO_NAME>", "<ORG/REPO_NAME>", ...]
 ```
 
-## 🧰 Available Tools
+## 🧰 Agents
 
 The open-aware MCP server provides two powerful tools that can be integrated into your AI workflows:
 
@@ -115,6 +115,47 @@ An deep context agent that can answer / plan / research complex queries about a 
 }
 ```
 </details>
+
+
+<details>
+<summary>
+  <b> 🔨 **Deep Issues** (`issues`) </b>
+</summary>
+  
+An deep issue finding agent that accept code diff and provide analysis of any breaking changes
+
+**Example Usage:**
+```json
+{
+ "tool": "issue",
+ "parameters": {
+   "input": [
+     "@@ -10,7 +10,7 @@ router = APIRouter()",
+     "",
+     "-@router.get(\"/foo\")",
+     "+@router.get(\"/foo/bar\")",
+     " async def get_users()"
+   ],
+   "repositories": ["backend/api", "frontend/app"],
+   "session_id": "analysis-123"
+ }
+}
+```
+</details>
+
+### Quick Selection
+| Scenario | Tool | Example Query | Expected Outcome | Domain |
+|----------|------|---------------|------------------|---------------------|
+| Understanding system architecture | `deep_research` | "Explain how our microservices communicate and what protocols they use" | Detailed explanation of service communication patterns, protocols, and data flow | Architecture & Design |
+| Finding design patterns | `get_context` | "singleton pattern implementation" | Code examples of singleton patterns used in the codebase | Architecture & Design |
+| Locating error handling patterns | `get_context` | "try catch error handling with logging" | Examples of error handling patterns with logging | Code Discovery & Learning |
+| Understanding business logic | `deep_research` | "How is pricing calculated for premium users?" | Detailed explanation of pricing logic and rules | Code Discovery & Learning |
+| Analyzing authentication flow | `deep_research` | "Trace the complete OAuth2 authentication flow" | Step-by-step authentication process across services | Security & Authentication |
+| Identifying security vulnerabilities | `issues` | [code diff with auth changes] | Potential security issues in authentication changes | Security & Authentication |
+| Planning feature additions | `deep_research` | "Where should we add caching for better performance?" | Strategic caching recommendations | Feature Development |
+| Understanding error sources | `deep_research` | "What could cause a 500 error in the checkout process?" | Potential failure points and error conditions | Debugging & Troubleshooting |
+| Planning third-party integrations | `get_context` | "stripe payment integration" | Existing integration patterns and implementations | Integration & Migration |
+| Validating best practices | `deep_research` | "Are we following REST best practices in our API design?" | Analysis of REST compliance and recommendations | Code Review & Quality |
 
 ## 🔬 Exsamples
 
