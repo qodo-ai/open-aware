@@ -27,6 +27,8 @@
 
 ## 📋 Features
 
+Compare **Open Aware** capabilities with standard agents:
+
 | Category | Open Aware | Your Agent |
 |----------|------------|------------|
 | 🔍 **Advanced context** | ✅ Advanced context across repositories including documentation and code | ❌ |
@@ -208,27 +210,37 @@ Therefore, investigate and plan how to do it and create a .md file plan for me t
 3. Creates a detailed plan aligned with the project's architecture
 4. Ensures the changes won't break existing functionality
 
+<br/>
+
 <details>
 <summary>
   <b>📖 More Use Cases</b>
 </summary>
-
 <br/>
 
-| Scenario | Tool | Example Query | Expected Outcome | Domain |
-|----------|------|---------------|------------------|--------|
-| 🏛️ Understanding system architecture | `deep_research` | "Explain how our microservices communicate and what protocols they use" | Detailed explanation of service communication patterns, protocols, and data flow | 🏗️ Architecture & Design |
-| 🎨 Finding design patterns | `get_context` | "singleton pattern implementation" | Code examples of singleton patterns used in the codebase | 🏗️ Architecture & Design |
-| 🚨 Locating error handling patterns | `get_context` | "try catch error handling with logging" | Examples of error handling patterns with logging | 🔍 Code Discovery & Learning |
-| 💰 Understanding business logic | `deep_research` | "How is pricing calculated for premium users?" | Detailed explanation of pricing logic and rules | 🔍 Code Discovery & Learning |
-| 🔐 Analyzing authentication flow | `deep_research` | "Trace the complete OAuth2 authentication flow" | Step-by-step authentication process across services | 🛡️ Security & Authentication |
-| ⚠️ Identifying security vulnerabilities | `issues` | [code diff with auth changes] | Potential security issues in authentication changes | 🛡️ Security & Authentication |
-| ⚡ Planning feature additions | `deep_research` | "Where should we add caching for better performance?" | Strategic caching recommendations | 🚀 Feature Development |
-| 🔥 Understanding error sources | `deep_research` | "What could cause a 500 error in the checkout process?" | Potential failure points and error conditions | 🐛 Debugging & Troubleshooting |
-| 🔌 Planning third-party integrations | `get_context` | "stripe payment integration" | Existing integration patterns and implementations | 🔗 Integration & Migration |
-| ✅ Validating best practices | `deep_research` | "Are we following REST best practices in our API design?" | Analysis of REST compliance and recommendations | 📝 Code Review & Quality |
+### Domain Categories:
+| Scenario | Tool | Example Query | Expected Outcome |  |
+|----------|------|---------------|------------------|:---:|
+| 🏛️ Understanding system architecture | `deep_research` | "Explain how our microservices communicate and what protocols they use" | Detailed explanation of service communication patterns, protocols, and data flow | 🏗️ |
+| 🎨 Finding design patterns | `get_context` | "singleton pattern implementation" | Code examples of singleton patterns used in the codebase | 🏗️ |
+| 🚨 Locating error handling patterns | `get_context` | "try catch error handling with logging" | Examples of error handling patterns with logging | 🔍 |
+| 💰 Understanding business logic | `deep_research` | "How is pricing calculated for premium users?" | Detailed explanation of pricing logic and rules | 🔍 |
+| 🔐 Analyzing authentication flow | `deep_research` | "Trace the complete OAuth2 authentication flow" | Step-by-step authentication process across services | 🛡️ |
+| ⚠️ Identifying security vulnerabilities | `issues` | [code diff with auth changes] | Potential security issues in authentication changes | 🛡️ |
+| ⚡ Planning feature additions | `deep_research` | "Where should we add caching for better performance?" | Strategic caching recommendations | 🚀 |
+| 🔥 Understanding error sources | `deep_research` | "What could cause a 500 error in the checkout process?" | Potential failure points and error conditions | 🐛 |
+| 🔌 Planning third-party integrations | `get_context` | "stripe payment integration" | Existing integration patterns and implementations | 🔗 |
+| ✅ Validating best practices | `deep_research` | "Are we following REST best practices in our API design?" | Analysis of REST compliance and recommendations | 📝 |
 
+🏗️ **Architecture & Design**
+🔍 **Code Discovery & Learning**
+🛡️ **Security & Authentication**
+🚀 **Feature Development**
+🐛 **Debugging & Troubleshooting**
+🔗 **Integration & Migration**
+📝 **Code Review & Quality**
 </details>
+<br/>
 
 ---
 
