@@ -4,9 +4,21 @@
 <img width="1024" height="683" alt="image" src="https://github.com/user-attachments/assets/882f5966-4fe1-4903-be32-2f2a89aff37e" />
 </div>
 
+Open Aware brings code intelligence directly to your AI assistant through MCP. Go beyond keyword search, understand code semantically across multiple repositories with daily updated indexes.
 
+## 📚 Table of Contents
 
-Open Aware brings code intelligence directly to your AI assistant through MCP. Go beyond keyword search, understand code semantically across multiple repositories with daily updated indexes. 
+- [Features](#features)
+- [Integration with MCP](#integration-with-mcp)
+- [🤖 Prompts](#prompts)
+- [🧰 Agents](#Agents)
+  - [Context Retrieval](#context-retrieval-get_context)
+  - [Deep Research](#deep-research-deep_research)
+  - [Deep Issues](#deep-issues-issues)
+- [🔬 Examples](#examples)
+- [🏗️ Architecture](#️architecture)
+- [⚠️ Disclaimer](#️disclaimer)
+- [📤 Connect with Us](#outbox_tray-connect-with-us) 
 
 ## Features
 
@@ -34,7 +46,7 @@ Both tools are exposed through the Model Context Protocol (MCP), making them eas
 
 ## 🤖 Prompts
 
-#### Example 1: Let your agent reasoning to select aware tools  
+#### Example 1: Let your agent reason to select aware tools  
 ```text
 Use open-aware to:
 <USER_PROMPT>
@@ -202,7 +214,7 @@ Therefore, investigate and plan how to do it and create a .md file plan for me t
 
 **Remember**: This tool is designed to assist in code discovery and analysis. Professional judgment, thorough testing, and security reviews are essential before using any code in production systems.
 
-## :outbox_tray: Connect with Us
+## 📤 Connect with Us
 
 Join our community to get support, share feedback, and stay updated with the latest features!
 
