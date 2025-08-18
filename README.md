@@ -6,16 +6,16 @@
 
 
 
-Open Aware brings the code intelligence directly to your AI assistant through MCP. Go beyond keyword search, understand code semantically across multiple repositories with daily updated indexes. 
+Open Aware brings code intelligence directly to your AI assistant through MCP. Go beyond keyword search, understand code semantically across multiple repositories with daily updated indexes. 
 
 ## Features
 
 | Category | Open Aware | Your Agent |
 |----------|------------|------------|
-| 🔍 **Addvance context** | ✅ Advanced context across repositories include documentation and code | ❌ |
+| 🔍 **Advanced context** | ✅ Advanced context across repositories including documentation and code | ❌ |
 | 🤖 **Agentic** | ✅ Agent that searches deep in indexed code and documentation for your query | ❌ |
 | 🛠️ **Aware engine** | ✅ You get access via MCP to the same features enterprise customers get | ❌ |
-| 🚀 **Cross repo intelegence** | ✅ Ability to query multiple repositories | ❌ |
+| 🚀 **Cross-repo intelligence** | ✅ Ability to query multiple repositories | ❌ |
 | 🎯 **Up to date** | ✅ We index daily all changes from the latest version for each repo | ❌ |
 
 ## Integration with MCP
@@ -34,13 +34,13 @@ Both tools are exposed through the Model Context Protocol (MCP), making them eas
 
 ## 🤖 Prompts
 
-#### Example 1: Let your agent resoning to select aware tools  
+#### Example 1: Let your agent reasoning to select aware tools  
 ```text
 Use open-aware to:
 <USER_PROMPT>
 ```
 
-#### Example 2: Spesificlly use deep-research / get-context
+#### Example 2: Specifically use deep-research / get-context
 ```text
 Use deep-research to:
 <USER_PROMPT>
@@ -50,7 +50,7 @@ Use get-context to:
 <USER_PROMPT>
 ```
 
-#### Example 3: Granular search per repositorie\s 
+#### Example 3: Granular search per repository/repositories 
 ```text
 Use open-aware to: 
 <USER_PROMPT>
@@ -65,7 +65,7 @@ The open-aware MCP server provides two powerful tools that can be integrated int
 <summary>
   <b> 🔨 **Context Retrieval** (`get_context`) </b>
 </summary>
-This tool performs semantic search across codebase/s to find relevant code snippets.
+This tool performs semantic search across codebase(s) to find relevant code snippets.
 
 **Key Features:**
 - **Semantic Search**: Uses vector embeddings to find conceptually similar code, not just keyword matches
@@ -94,7 +94,7 @@ This tool performs semantic search across codebase/s to find relevant code snipp
   <b> 🔨 **Deep Research** (`deep_research`) </b>
 </summary>
   
-An deep context agent that can answer / plan / research complex queries about a codebase\s by analyzing code structure, patterns, and relationships.
+A deep context agent that can answer/plan/research complex queries about codebase(s) by analyzing code structure, patterns, and relationships.
 
 **Key Features:**
 - **Code Understanding**: Comprehends code logic, architecture, and design patterns
@@ -122,7 +122,7 @@ An deep context agent that can answer / plan / research complex queries about a 
   <b> 🔨 **Deep Issues** (`issues`) </b>
 </summary>
   
-An deep issue finding agent that accept code diff and provide analysis of any breaking changes
+A deep issue-finding agent that accepts code diff and provides analysis of any breaking changes
 
 **Example Usage:**
 ```json
@@ -143,23 +143,23 @@ An deep issue finding agent that accept code diff and provide analysis of any br
 ```
 </details>
 
-## 🔬 Exsamples
+## 🔬 Examples
 
 Comparison based on code behavior: make a decision based on the implementation of the projects versus reading only the docs.
 ```text
 use deep_research: 
 Investigate repositories ["langchain-ai/langchain", "BerriAI/litellm"]. 
-I don't know witch one to use for LLM API calling create a comparison and help me decide.
+I don't know which one to use for LLM API calling. Create a comparison and help me decide.
 ```
 
-Research for implementation and plan - In some cases you migth be missing a feature from a repository and you like to implemnt it your self via PR for the repo / as forked version, here is exsample of feature that is missing today in flask repository, first the agent will try to make sure there is not exsisitng way to use the rewuested feature and then if not he will create a details plan of the files need to be chnage and suggest the modificayion to be added.
+Research for implementation and plan - In some cases you might be missing a feature from a repository and you'd like to implement it yourself via PR for the repo/as a forked version. Here is an example of a feature that is missing today in the Flask repository. First, the agent will try to make sure there is not an existing way to use the requested feature, and then if not, it will create a detailed plan of the files that need to be changed and suggest the modifications to be added.
 
-This shwcase need to applay research for optimal implementation need where the agent is doing the research and codebase understadning to enable ececute the chnage in a way that will not brake the code and also be alinged with how fetures current features are implemned.
+This showcases the need to apply research for optimal implementation needs where the agent is doing the research and codebase understanding to enable execution of the change in a way that will not break the code and also be aligned with how current features are implemented.
 ```text
 use deep_research:
-Investigate repository ["pallets/flask"], is there capability to manage requests queue ?
-If Not i like to submmit a PR for flask repo to suggest adding a queue for requests.,
-therfor investigate and plan how to do it and create .md file plan for me to execute
+Investigate repository ["pallets/flask"], is there capability to manage requests queue?
+If not, I'd like to submit a PR for the Flask repo to suggest adding a queue for requests.
+Therefore, investigate and plan how to do it and create a .md file plan for me to execute.
 ```
 
 
