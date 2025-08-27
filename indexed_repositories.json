@@ -31,6 +31,8 @@
     {"name":"Fizzadar/pyinfra","url":"https://github.com/Fizzadar/pyinfra"},
     {"name":"ungleich/cdist","url":"https://github.com/ungleich/cdist"},
     {"name":"openai/codex","url":"https://github.com/openai/codex"},
-    {"name":"anthropics/claude-code","url":"https://github.com/anthropics/claude-code"}
+    {"name":"anthropics/claude-code","url":"https://github.com/anthropics/claude-code"},
+    {"name":"kubernetes/kubernetes","url":"https://github.com/kubernetes/kubernetes"},
+    {"name":"open-feature/spec","url":"https://github.com/open-feature/spec"}
   ]
 }
