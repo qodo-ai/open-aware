@@ -1,38 +1,142 @@
 {
-  "repositories": [
-    {"name":"facebook/react","url":"https://github.com/facebook/react"},
-    {"name":"lodash/lodash","url":"https://github.com/lodash/lodash"},
-    {"name":"axios/axios","url":"https://github.com/axios/axios"},
-    {"name":"expressjs/express","url":"https://github.com/expressjs/express"},
-    {"name":"vuejs/core","url":"https://github.com/vuejs/core"},
-    {"name":"jquery/jquery","url":"https://github.com/jquery/jquery"},
-    {"name":"webpack/webpack","url":"https://github.com/webpack/webpack"},
-    {"name":"jestjs/jest","url":"https://github.com/jestjs/jest"},
-    {"name":"angular/angular","url":"https://github.com/angular/angular"},
-    {"name":"numpy/numpy","url":"https://github.com/numpy/numpy"},
-    {"name":"tensorflow/tensorflow","url":"https://github.com/tensorflow/tensorflow"},
-    {"name":"pandas-dev/pandas","url":"https://github.com/pandas-dev/pandas"},
-    {"name":"pytorch/pytorch","url":"https://github.com/pytorch/pytorch"},
-    {"name":"psf/requests","url":"https://github.com/psf/requests"},
-    {"name":"fastapi/fastapi","url":"https://github.com/fastapi/fastapi"},
-    {"name":"pallets/flask","url":"https://github.com/pallets/flask"},
-    {"name":"spring-projects/spring-boot","url":"https://github.com/spring-projects/spring-boot"},
-    {"name":"opencv/opencv","url":"https://github.com/opencv/opencv"},
-    {"name":"huggingface/transformers","url":"https://github.com/huggingface/transformers"},
-    {"name":"stanfordnlp/stanza","url":"https://github.com/stanfordnlp/stanza"},
-    {"name":"langchain-ai/langchain","url":"https://github.com/langchain-ai/langchain"},
-    {"name":"jerryjliu/llama_index","url":"https://github.com/jerryjliu/llama_index"},
-    {"name":"deepset-ai/haystack","url":"https://github.com/deepset-ai/haystack"},
-    {"name":"promptslab/promptify","url":"https://github.com/promptslab/promptify"},
-    {"name":"BerriAI/litellm","url":"https://github.com/BerriAI/litellm"},
-    {"name":"ansible/ansible","url":"https://github.com/ansible/ansible"},
-    {"name":"saltstack/salt","url":"https://github.com/saltstack/salt"},
-    {"name":"StackStorm/st2","url":"https://github.com/StackStorm/st2"},
-    {"name":"Fizzadar/pyinfra","url":"https://github.com/Fizzadar/pyinfra"},
-    {"name":"ungleich/cdist","url":"https://github.com/ungleich/cdist"},
-    {"name":"openai/codex","url":"https://github.com/openai/codex"},
-    {"name":"anthropics/claude-code","url":"https://github.com/anthropics/claude-code"},
-    {"name":"kubernetes/kubernetes","url":"https://github.com/kubernetes/kubernetes"},
-    {"name":"open-feature/spec","url":"https://github.com/open-feature/spec"}
+  "repos_to_index": [
+    {
+      "full_name": "facebook/react"
+    },
+    {
+      "full_name": "qodo-ai/pr-agent"
+    },
+    {
+      "full_name": "open-feature/spec"
+    },
+    {
+      "full_name": "lodash/lodash"
+    },
+    {
+      "full_name": "axios/axios"
+    },
+    {
+      "full_name": "expressjs/express"
+    },
+    {
+      "full_name": "vuejs/core"
+    },
+    {
+      "full_name": "jquery/jquery"
+    },
+    {
+      "full_name": "webpack/webpack"
+    },
+    {
+      "full_name": "jestjs/jest"
+    },
+    {
+      "full_name": "angular/angular"
+    },
+    {
+      "full_name": "numpy/numpy"
+    },
+    {
+      "full_name": "tensorflow/tensorflow"
+    },
+    {
+      "full_name": "pandas-dev/pandas"
+    },
+    {
+      "full_name": "pytorch/pytorch"
+    },
+    {
+      "full_name": "psf/requests"
+    },
+    {
+      "full_name": "fastapi/fastapi"
+    },
+    {
+      "full_name": "pallets/flask"
+    },
+    {
+      "full_name": "spring-projects/spring-boot"
+    },
+    {
+      "full_name": "opencv/opencv"
+    },
+    {
+      "full_name": "huggingface/transformers"
+    },
+    {
+      "full_name": "stanfordnlp/stanza"
+    },
+    {
+      "full_name": "langchain-ai/langchain"
+    },
+    {
+      "full_name": "jerryjliu/llama_index"
+    },
+    {
+      "full_name": "deepset-ai/haystack"
+    },
+    {
+      "full_name": "promptslab/promptify"
+    },
+    {
+      "full_name": "BerriAI/litellm"
+    },
+    {
+      "full_name": "ansible/ansible"
+    },
+    {
+      "full_name": "saltstack/salt"
+    },
+    {
+      "full_name": "StackStorm/st2"
+    },
+    {
+      "full_name": "Fizzadar/pyinfra"
+    },
+    {
+      "full_name": "ungleich/cdist"
+    },
+    {
+      "full_name": "openai/codex"
+    },
+    {
+      "full_name": "anthropics/claude-code"
+    },
+    {
+      "full_name": "Significant-Gravitas/AutoGPT"
+    },
+    {
+      "full_name": "comfyanonymous/ComfyUI"
+    },
+    {
+      "full_name": "langchain-ai/langgraph"
+    },
+    {
+      "full_name": "langchain-ai/langgraphjs"
+    },
+    {
+      "full_name": "lllyasviel/Fooocus"
+    },
+    {
+      "full_name": "jlowin/fastmcp"
+    },
+    {
+      "full_name": "modelcontextprotocol/servers"
+    },
+    {
+      "full_name": "modelcontextprotocol/modelcontextprotocol"
+    },
+    {
+      "full_name": "modelcontextprotocol/python-sdk"
+    },
+    {
+      "full_name": "modelcontextprotocol/typescript-sdk"
+    },
+    {
+      "full_name": "modelcontextprotocol/go-sdk"
+    },
+    {
+      "full_name": "kubernetes/kubernetes"
+    }
   ]
 }
