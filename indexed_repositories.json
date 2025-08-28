@@ -1,112 +1,58 @@
 {
   "repos_to_index": [
     {
-      "full_name": "facebook/react"
-    },
-    {
-      "full_name": "qodo-ai/pr-agent"
-    },
-    {
-      "full_name": "open-feature/spec"
-    },
-    {
-      "full_name": "lodash/lodash"
-    },
-    {
-      "full_name": "axios/axios"
-    },
-    {
-      "full_name": "expressjs/express"
-    },
-    {
-      "full_name": "vuejs/core"
-    },
-    {
-      "full_name": "jquery/jquery"
-    },
-    {
-      "full_name": "webpack/webpack"
-    },
-    {
-      "full_name": "jestjs/jest"
-    },
-    {
       "full_name": "angular/angular"
-    },
-    {
-      "full_name": "numpy/numpy"
-    },
-    {
-      "full_name": "tensorflow/tensorflow"
-    },
-    {
-      "full_name": "pandas-dev/pandas"
-    },
-    {
-      "full_name": "pytorch/pytorch"
-    },
-    {
-      "full_name": "psf/requests"
-    },
-    {
-      "full_name": "fastapi/fastapi"
-    },
-    {
-      "full_name": "pallets/flask"
-    },
-    {
-      "full_name": "spring-projects/spring-boot"
-    },
-    {
-      "full_name": "opencv/opencv"
-    },
-    {
-      "full_name": "huggingface/transformers"
-    },
-    {
-      "full_name": "stanfordnlp/stanza"
-    },
-    {
-      "full_name": "langchain-ai/langchain"
-    },
-    {
-      "full_name": "jerryjliu/llama_index"
-    },
-    {
-      "full_name": "deepset-ai/haystack"
-    },
-    {
-      "full_name": "promptslab/promptify"
-    },
-    {
-      "full_name": "BerriAI/litellm"
-    },
-    {
-      "full_name": "ansible/ansible"
-    },
-    {
-      "full_name": "saltstack/salt"
-    },
-    {
-      "full_name": "StackStorm/st2"
-    },
-    {
-      "full_name": "Fizzadar/pyinfra"
-    },
-    {
-      "full_name": "ungleich/cdist"
-    },
-    {
-      "full_name": "openai/codex"
     },
     {
       "full_name": "anthropics/claude-code"
     },
     {
-      "full_name": "Significant-Gravitas/AutoGPT"
+      "full_name": "ansible/ansible"
+    },
+    {
+      "full_name": "axios/axios"
+    },
+    {
+      "full_name": "BerriAI/litellm"
     },
     {
       "full_name": "comfyanonymous/ComfyUI"
+    },
+    {
+      "full_name": "deepset-ai/haystack"
+    },
+    {
+      "full_name": "expressjs/express"
+    },
+    {
+      "full_name": "facebook/react"
+    },
+    {
+      "full_name": "fastapi/fastapi"
+    },
+    {
+      "full_name": "Fizzadar/pyinfra"
+    },
+    {
+      "full_name": "huggingface/transformers"
+    },
+    {
+      "full_name": "jerryjliu/llama_index"
+    },
+    {
+      "full_name": "jestjs/jest"
+    },
+    {
+      "full_name": "jlowin/fastmcp"
+    },
+    {
+      "full_name": "jquery/jquery"
+    },
+    {
+      "full_name": "kubernetes/kubernetes"
+    },
+    {
+      "full_name": "langchain-ai/langchain"
     },
     {
       "full_name": "langchain-ai/langgraph"
@@ -118,10 +64,10 @@
       "full_name": "lllyasviel/Fooocus"
     },
     {
-      "full_name": "jlowin/fastmcp"
+      "full_name": "lodash/lodash"
     },
     {
-      "full_name": "modelcontextprotocol/servers"
+      "full_name": "modelcontextprotocol/go-sdk"
     },
     {
       "full_name": "modelcontextprotocol/modelcontextprotocol"
@@ -130,13 +76,82 @@
       "full_name": "modelcontextprotocol/python-sdk"
     },
     {
+      "full_name": "modelcontextprotocol/servers"
+    },
+    {
       "full_name": "modelcontextprotocol/typescript-sdk"
     },
     {
-      "full_name": "modelcontextprotocol/go-sdk"
+      "full_name": "numpy/numpy"
     },
     {
-      "full_name": "kubernetes/kubernetes"
+      "full_name": "open-feature/spec"
+    },
+    {
+      "full_name": "openai/codex"
+    },
+    {
+      "full_name": "opencv/opencv"
+    },
+    {
+      "full_name": "pallets/flask"
+    },
+    {
+      "full_name": "pandas-dev/pandas"
+    },
+    {
+      "full_name": "promptslab/promptify"
+    },
+    {
+      "full_name": "psf/requests"
+    },
+    {
+      "full_name": "pytorch/pytorch"
+    },
+    {
+      "full_name": "qodo-ai/pr-agent"
+    },
+    {
+      "full_name": "saltstack/salt"
+    },
+    {
+      "full_name": "Significant-Gravitas/AutoGPT"
+    },
+    {
+      "full_name": "spring-projects/spring-ai"
+    },
+    {
+      "full_name": "spring-projects/spring-boot"
+    },
+    {
+      "full_name": "spring-projects/spring-framework"
+    },
+    {
+      "full_name": "spring-projects/spring-integration"
+    },
+    {
+      "full_name": "spring-projects/spring-modulith"
+    },
+    {
+      "full_name": "spring-projects/spring-security"
+    },
+    {
+      "full_name": "StackStorm/st2"
+    },
+    {
+      "full_name": "stanfordnlp/stanza"
+    },
+    {
+      "full_name": "tensorflow/tensorflow"
+    },
+    {
+      "full_name": "ungleich/cdist"
+    },
+    {
+      "full_name": "vuejs/core"
+    },
+    {
+      "full_name": "webpack/webpack"
     }
   ]
 }
