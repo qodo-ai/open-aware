@@ -29,13 +29,13 @@
 
 Compare **Open Aware** capabilities with standard agents:
 
-| Category | Open Aware | Your Agent |
-|----------|------------|------------|
-| 🔍 **Advanced context** | ✅ Advanced context across repositories including documentation and code | ❌ |
-| 🤖 **Agentic** | ✅ Agent that searches deep in indexed code and documentation for your query | ❌ |
-| 🛠️ **Aware engine** | ✅ You get access via **MCP** to the same features enterprise customers get | ❌ |
-| 🚀 **Cross-repo intelligence** | ✅ Ability to query multiple repositories | ❌ |
-| 🎯 **Up to date** | ✅ We index daily all changes from the latest version for each repo | ❌ |
+| Category | Open Aware | CLI/Vibe Coding Agents | Why Open Aware is Different |
+|----------|------------|-------------------|------------------------------|
+| 🔍 **Advanced context** | ✅ Semantic understanding across entire repositories | ⚠️ Limited to open files/folders | Pre-indexed semantic search vs scanning local files |
+| 🤖 **Agentic** | ✅ Researches complex deep architectural tasks | ⚠️ Code completion/generation focused | Answers "broad/deep" not just a "summary of local files" |
+| 🛠️ **Aware engine** | ✅ Enterprise code intelligence via MCP | ❌ Consumer-grade autocomplete | Industrial analysis vs IDE suggestions |
+| 🚀 **Cross-repo intelligence** | ✅ Analyzes multiple repos simultaneously | ❌ Single repo/workspace only | Understands interactions across repos |
+| 🎯 **Up to date** | ✅ Daily indexed popular OSS libraries | ⚠️ Only your local version | Knows latest Flask/React/FastAPI changes globally |
 
 ---
 
