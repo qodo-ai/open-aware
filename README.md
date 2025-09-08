@@ -13,11 +13,11 @@
 
 - [Features](#features)
 - [Integration with MCP](#integration-with-mcp)
-- [🤖 Prompts](#-prompts)
 - [🧰 Agents](#-agents)
   - [Context Retrieval (`get_context`)](#-context-retrieval-get_context-)
   - [Deep Research (`deep_research`)](#-deep-research-deep_research-)
   - [Deep Issues (`issues`)](#-deep-issues-issues-)
+- [🤖 Prompts](#-prompts)
 - [🔬 Examples](#-examples)
 - [🏗️ Architecture](#️-architecture)
 - [⚠️ Disclaimer](#️-disclaimer)
@@ -53,36 +53,6 @@ Both tools are exposed through the **Model Context Protocol (MCP)**, making them
     ]
   }
 }
-```
-
----
-
-## 🤖 Prompts
-
-Learn how to effectively use Open Aware with these prompt examples:
-
-### Example 1: Let your agent reason to select aware tools
-```text
-Use open-aware to:
-<USER_PROMPT>
-```
-
-### Example 2: Specifically use deep-research / get-context
-```text
-Use deep-research to:
-<USER_PROMPT>
-```
-
-```text
-Use get-context to:
-<USER_PROMPT>
-```
-
-### Example 3: Granular search per repository/repositories
-```text
-Use open-aware to: 
-<USER_PROMPT>
-repositories = ["<ORG/REPO_NAME>", "<ORG/REPO_NAME>", ...]
 ```
 
 ---
@@ -176,6 +146,36 @@ A **deep issue-finding agent** that accepts code diff and provides analysis of a
 }
 ```
 </details>
+
+---
+
+## 🤖 Prompts
+
+Learn how to effectively use Open Aware with these prompt examples:
+
+### Example 1: Let your agent reason to select aware tools
+```text
+Use open-aware to:
+<USER_PROMPT>
+```
+
+### Example 2: Specifically use deep-research / get-context
+```text
+Use deep-research to:
+<USER_PROMPT>
+```
+
+```text
+Use get-context to:
+<USER_PROMPT>
+```
+
+### Example 3: Granular search per repository/repositories
+```text
+Use open-aware to: 
+<USER_PROMPT>
+repositories = ["<ORG/REPO_NAME>", "<ORG/REPO_NAME>", ...]
+```
 
 ---
 
