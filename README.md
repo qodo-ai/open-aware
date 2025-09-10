@@ -45,12 +45,14 @@ Both tools are exposed through the **Model Context Protocol (MCP)**, making them
 
 ```json
 {
-  "open-aware": {
-    "command": "npx",
-    "args": [
-      "mcp-remote",
-      "https://open-aware.qodo.ai/mcp/"
-    ]
+  "mcpServers": {
+    "open-aware": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://open-aware.qodo.ai/mcp/"
+      ]
+    }
   }
 }
 ```
