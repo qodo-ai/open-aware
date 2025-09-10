@@ -12,7 +12,7 @@
 ## 📚 Table of Contents
 
 - [Features](#features)
-- [Integration with MCP](#integration-with-mcp)
+- [Integration with MCP](#-integration-with-mcp)
 - [🧰 Agents](#-agents)
   - [Context Retrieval (`get_context`)](#-context-retrieval-get_context-)
   - [Deep Research (`deep_research`)](#-deep-research-deep_research-)
