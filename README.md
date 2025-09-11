@@ -16,7 +16,7 @@
 - [🧰 Agents](#-agents)
   - [Context Retrieval (`get_context`)](#-context-retrieval-get_context-)
   - [Deep Research (`deep_research`)](#-deep-research-deep_research-)
-  - [Deep Issues (`issues`)](#-deep-issues-issues-)
+  - [Context Ask (`ask`)](#-context-ask-ask-)
 - [🤖 Prompts](#-prompts)
 - [🔬 Examples](#-examples)
 - [🏗️ Architecture](#️-architecture)
@@ -123,25 +123,19 @@ A **deep context agent** that can answer/plan/research complex queries about cod
 
 <details>
 <summary>
-  <b>🔨 Deep Issues (<code>issues</code>)</b>
+  <b>🔨 Context Ask (<code>ask</code>)</b>
 </summary>
 
 <br/>
   
-A **deep issue-finding agent** that accepts code diff and provides analysis of any breaking changes.
+A **Basic coding questions agent** that accepts query and provides details answer for selected coding repositories.
 
 **Example Usage:**
 ```json
 {
-  "tool": "issue",
+  "tool": "ask",
   "parameters": {
-    "input": [
-      "@@ -10,7 +10,7 @@ router = APIRouter()",
-      "",
-      "-@router.get(\"/foo\")",        // Original endpoint
-      "+@router.get(\"/foo/bar\")",    // Modified endpoint - potential breaking change
-      " async def get_users()"
-    ],
+    "input": "Explain about these repositories",
     "repositories": ["backend/api", "frontend/app"],  // Check impact across repos
     "session_id": "analysis-123"                      // Track conversation context
   }
@@ -155,21 +149,30 @@ A **deep issue-finding agent** that accepts code diff and provides analysis of a
 
 Learn how to effectively use Open Aware with these prompt examples:
 
+```note
+🚨 NOTE: Adding the repository name in the prompt helps the agent to focus. 
+Also, answering queries for repositories that are not in the index will not work. 
+See the supported repositories in the "indexed_repositories.json" file.
+```
+
 ### Example 1: Let your agent reason to select aware tools
 ```text
 Use open-aware to:
 <USER_PROMPT>
+repositories = ["<ORG/REPO_NAME>"]
 ```
 
 ### Example 2: Specifically use deep-research / get-context
 ```text
 Use deep-research to:
 <USER_PROMPT>
+repositories = ["<ORG/REPO_NAME>"]
 ```
 
 ```text
 Use get-context to:
 <USER_PROMPT>
+repositories = ["<ORG/REPO_NAME>"]
 ```
 
 ### Example 3: Granular search per repository/repositories
