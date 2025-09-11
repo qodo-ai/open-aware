@@ -154,9 +154,10 @@ A **Basic coding questions agent** that accepts query and provides details answe
 Learn how to effectively use Open Aware with these prompt examples:
 
 ```note
-🚨 NOTE: Adding the repository name in the prompt helps the agent to focus. 
+🚨🚨🚨 NOTE: Adding the repository name in the prompt helps the agent to focus and highly recommended. 
 Also, answering queries for repositories that are not in the index will not work. 
-See the supported repositories in the "indexed_repositories.json" file.
+See the supported repositories in the "indexed_repositories.json" file. 
+Dident found your favorite repos? open a pull request and add them to indexed repositories.json
 ```
 
 ### Example 1: Let your agent reason to select aware tools
