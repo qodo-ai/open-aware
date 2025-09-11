@@ -279,3 +279,9 @@ Join our community to get support, share feedback, and stay updated with the lat
 - 💡 **Feature Requests**: Suggest new features and capabilities.
 - 🚀 **Stay Updated**: Be the first to know about new releases.
 - 👥 **Connect**: Meet other developers using aware-open.
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=qodo-ai/open-aware&type=Date)](https://star-history.com/#qodo-ai/open-aware&Date)
