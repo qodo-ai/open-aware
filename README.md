@@ -43,6 +43,10 @@ Compare **Open Aware** capabilities with standard agents:
 
 Both tools are exposed through the **Model Context Protocol (MCP)**, making them easily accessible to any MCP-compatible AI assistant or development environment.
 
+```bash
+npm install -g mcp-remote
+```
+
 ```json
 {
   "mcpServers": {
