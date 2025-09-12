@@ -91,6 +91,9 @@
             "full_name": "numpy/numpy"
         },
         {
+            "full_name": "open-feature/flagd"
+        },
+        {
             "full_name": "open-feature/spec"
         },
         {
