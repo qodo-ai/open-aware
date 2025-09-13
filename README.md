@@ -11,6 +11,7 @@
 
 ## 📚 Table of Contents
 
+- [Open Aware vs Qodo Aware](#open-aware-vs-qodo-aware)
 - [Features](#features)
 - [Integration with MCP](#-integration-with-mcp)
 - [🧰 Agents](#-agents)
@@ -22,6 +23,37 @@
 - [🏗️ Architecture](#️-architecture)
 - [⚠️ Disclaimer](#️-disclaimer)
 - [📤 Connect with Us](#-connect-with-us)
+
+---
+
+## Open Aware vs Qodo Aware
+
+### Open Aware (This Repository) - Free Public Access
+
+✅ **What you get:**
+
+* Code intelligence tools (`get_context`, `deep_research`, `ask`), for pre-indexed popular open source libraries
+* Daily updated indexes of popular OSS libraries (see `indexed_repositories.json`)
+* Community support and documentation
+* Free, and limited (currently ~10 calls/minutes) 
+
+⚙️ **What's limited:**
+
+* No access to private repositories
+* No customization of indexing or tools
+
+### Qodo Aware - Enterprise Solution
+
+✅ **What you get (everything above plus):**
+
+* Private repository indexing and analysis
+* Custom repository indexing schedules
+* Advanced code intelligence features
+* Enhanced privacy with zero data retention
+* Enterprise-grade security and compliance
+* Enterprise plans for high/unlimited usage
+
+**👨‍💻 Developer Recommendation:** Start with Open Aware if you want to experiment with code intelligence on popular open source repositories for free. Choose Qodo Aware if you need to analyze private repositories, require enterprise features, or want dedicated support and infrastructure.
 
 ---
 
