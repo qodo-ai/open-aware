@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/qodo-ai-open-aware-badge.png)](https://mseep.ai/app/qodo-ai-open-aware)
+
 # Open Aware
 
 <div align="center">
