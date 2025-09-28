@@ -75,6 +75,20 @@ Compare **Open Aware** capabilities with standard agents:
 
 Both tools are exposed through the **Model Context Protocol (MCP)**, making them easily accessible to any MCP-compatible AI assistant or development environment.
 
+### Streamable HTTP (Recommended)
+
+```json
+{
+  "mcpServers": {
+    "open-aware": {
+      "url": "https://open-aware.qodo.ai/mcp"
+    }
+  }
+}
+```
+
+### Streamable HTTP via remote proxy
+
 ```bash
 npm install -g mcp-remote
 ```
@@ -86,7 +100,7 @@ npm install -g mcp-remote
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://open-aware.qodo.ai/mcp/"
+        "https://open-aware.qodo.ai/mcp"
       ]
     }
   }
