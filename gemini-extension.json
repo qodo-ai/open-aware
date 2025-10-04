@@ -1,0 +1,10 @@
+{
+  "name": "open-aware",
+  "version": "1.0.0",
+  "mcpServers": {
+    "open-aware": {
+      "url": "https://open-aware.qodo.ai/mcp"
+    }
+  },
+  "contextFileName": "gemini-extension/GEMINI.md"
+}
