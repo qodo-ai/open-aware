@@ -161,6 +161,12 @@
         },
         {
             "full_name": "webpack/webpack"
+        },
+        {
+            "full_name": "microsoft/agent-framework"
+        },
+        {
+            "full_name": "microsoft/semantic-kernel"
         }
     ]
 }
